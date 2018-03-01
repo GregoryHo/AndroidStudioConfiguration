@@ -1,0 +1,129 @@
+<templateSet group="GregJava">
+  <template name="soplmp" value="System.out.println(&quot;$METHOD_NAME$, &quot; + $PARAMETERS$);" description="System.out.println(Method Name + parameters)" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="PARAMETERS" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ': [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rfvc" value="$target$ = ($cast$) $root$.findViewById(R.id.$resId$);" description="root.finViewById(R.id.xx)" toReformat="true" toShortenFQNames="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="root" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="clogl" value="CustomLogUtils.$T$($TAG$, &quot;$METHOD_NAME$&quot;, CustomLogUtils.LOW_PRIORITY);" description="CustomLogUtils.x(TAG, String, Low)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="clogn" value="CustomLogUtils.$T$($TAG$, &quot;$METHOD_NAME$&quot;, CustomLogUtils.NORMAL_PRIORITY);" description="CustomLogUtils.x(TAG, String, Middle)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="clogh" value="CustomLogUtils.$T$($TAG$, &quot;$METHOD_NAME$&quot;, CustomLogUtils.HIGH_PRIORITY);" description="CustomLogUtils.x(TAG, String, High)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="flml" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$&quot;, com.ns.greg.library.fancy_logger.FancyLogger.LOW_PRIORITY);" description="Logger.x(TAG, Method Name, LOW_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sopl" value="System.out.println(&quot;$VALUE$&quot;);" description="System.out.println(string)" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fvc" value="$target$ = ($cast$) findViewById(R.id.$resId$);" description="finViewById(R.id.xx)" toReformat="false" toShortenFQNames="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bc" value="/*--------------------------------&#10; * $blockInfo$     &#10; *-------------------------------*/" description="Block comment" toReformat="false" toShortenFQNames="true">
+    <variable name="blockInfo" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="flmpl" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$, &quot; + $PARAMETERS$, com.ns.greg.library.fancy_logger.FancyLogger.LOW_PRIORITY);" description="Logger.x(TAG, Method Name + Parameters, LOW_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="PARAMETERS" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ': [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="flmn" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$&quot;, FancyLogger.NORMAL_PRIORITY);" description="Logger.x(TAG, Method Name, NORMAL_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="flmh" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$&quot;, FancyLogger.HIGH_PRIORITY);" description="Logger.x(TAG, Method Name, HIGH_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="flmpn" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$, &quot; + $PARAMETERS$, FancyLogger.NORMAL_PRIORITY);" description="Logger.x(TAG, Method Name + Parameters, NORMAL_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="PARAMETERS" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ': [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="flmph" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, &quot;$METHODNAME$, &quot; + $PARAMETERS$, FancyLogger.HIGH_PRIORITY);" description="Logger.x(TAG, Method Name + Parameters, HIGH_PRIORITY)" toReformat="true" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHODNAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="PARAMETERS" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ': [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fl" value="com.ns.greg.library.fancy_logger.FancyLogger.$T$($TAG$, $MESSAGE$, $PRIORITY$);" description="Logger.x(TAG, Message, Priority)" toReformat="false" toShortenFQNames="true">
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PRIORITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="soplm" value="System.out.println(&quot;$METHOD_NAME$&quot;);" description="System.out.println(Method Name)" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

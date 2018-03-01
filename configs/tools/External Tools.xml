@@ -1,0 +1,23 @@
+<toolSet name="External Tools">
+  <tool name="javah" description="javah" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$JDKPath$\bin\javah" />
+      <option name="PARAMETERS" value="-v -jni -d $ModuleFileDir$/src/main/jni $FileClass$" />
+      <option name="WORKING_DIRECTORY" value="$SourcepathEntry$" />
+    </exec>
+  </tool>
+  <tool name="ndk-build" description="ndk-build" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\Gregory\AppData\Local\Android\Sdk\ndk-bundle\ndk-build.cmd" />
+      <option name="PARAMETERS" value="NDK_PROJECT_PATH=$FileDir$ NDK_APPLICATION_MK=$FileDir$\Application.mk APP_BUILD_SCRIPT=$FileDir$\Android.mk " />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
+  <tool name="ndk-build clean" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\Gregory\AppData\Local\Android\Sdk\ndk-bundle\ndk-build.cmd" />
+      <option name="PARAMETERS" value="clean NDK_PROJECT_PATH=$FileDir$ NDK_APPLICATION_MK=$FileDir$\Application.mk APP_BUILD_SCRIPT=$FileDir$\Android.mk" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
+</toolSet>
