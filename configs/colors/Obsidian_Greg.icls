@@ -1,12 +1,21 @@
-<scheme name="Obsidian_Greg" version="142" parent_scheme="Default">
+<scheme name="Obsidian Greg" version="142" parent_scheme="Default">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2018-07-31T13:57:24</property>
+    <property name="ide">AndroidStudio</property>
+    <property name="ideVersion">3.1.3.0</property>
+    <property name="modified">2018-09-25T13:36:24</property>
+    <property name="originalScheme">Obsidian_Greg</property>
+  </metaInfo>
   <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="14" />
-  <option name="EDITOR_FONT_NAME" value="Menlo" />
+  <option name="EDITOR_FONT_NAME" value="SauceCodePro Nerd Font" />
+  <option name="CONSOLE_FONT_NAME" value="SauceCodePro Nerd Font" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
     <option name="CARET_COLOR" value="bbbbbb" />
     <option name="CARET_ROW_COLOR" value="2f393c" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="293134" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="282c34" />
     <option name="FILESTATUS_ADDED" value="629755" />
     <option name="FILESTATUS_DELETED" value="6c6c6c" />
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6c6c6c" />
@@ -22,7 +31,7 @@
     <option name="FILESTATUS_addedOutside" value="629755" />
     <option name="FILESTATUS_changelistConflict" value="d5756c" />
     <option name="FILESTATUS_modifiedOutside" value="6897bb" />
-    <option name="GUTTER_BACKGROUND" value="293134" />
+    <option name="GUTTER_BACKGROUND" value="282c34" />
     <option name="INDENT_GUIDE" value="804000" />
     <option name="LINE_NUMBERS_COLOR" value="81969a" />
     <option name="METHOD_SEPARATORS_COLOR" value="2f393c" />
@@ -55,6 +64,12 @@
     <option name="BAD_CHARACTER">
       <value>
         <option name="FOREGROUND" value="e0e2e4" />
+      </value>
+    </option>
+    <option name="BOOKMARKS_ATTRIBUTES">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+        <option name="ERROR_STRIPE_COLOR" value="0" />
       </value>
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
@@ -95,7 +110,7 @@
     <option name="CONSOLE_NORMAL_OUTPUT">
       <value>
         <option name="FOREGROUND" value="e0e2e4" />
-        <option name="BACKGROUND" value="293134" />
+        <option name="BACKGROUND" value="2d2a2e" />
       </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
@@ -471,6 +486,31 @@
         <option name="FOREGROUND" value="678cb1" />
       </value>
     </option>
+    <option name="KDOC_LINK">
+      <value>
+        <option name="FOREGROUND" value="a082bd" />
+      </value>
+    </option>
+    <option name="KOTLIN_ANNOTATION">
+      <value>
+        <option name="FOREGROUND" value="a082bd" />
+      </value>
+    </option>
+    <option name="KOTLIN_ENUM_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="a082bd" />
+        <option name="FONT_TYPE" value="3" />
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_RECEIVER">
+      <value />
+    </option>
+    <option name="KOTLIN_SMART_CAST_VALUE">
+      <value />
+    </option>
+    <option name="KOTLIN_SMART_CONSTANT">
+      <value />
+    </option>
     <option name="LOGCAT_ASSERT_OUTPUT">
       <value>
         <option name="FOREGROUND" value="aa66cc" />
@@ -576,8 +616,8 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="e0e2e4" />
-        <option name="BACKGROUND" value="293134" />
+        <option name="FOREGROUND" value="c1c0c0" />
+        <option name="BACKGROUND" value="282c34" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
